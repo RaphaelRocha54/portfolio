@@ -1,12 +1,55 @@
 /* MEDIA CSS - PORTIFOLIO */
 
 
-/*****************************************************************************
-NAVIGATION MENU
-******************************************************************************/
-
 @media screen and (max-width: 768px){
-    #mediaNavButtonSlider {
-        display: none;
+
+    /*****************************************************************************
+    NAVIGATION MENU
+    ******************************************************************************/
+    #mainNav.openMainNav {
+        height: 100%;
+        opacity: 1;
+        transition: height 0.3s;
     }
+
+    #mainNav.openMainNav #mainNavButtons {
+        align-items: flex-start;
+        height: 100%;
+        padding-top: 50px;
+        transition: height 0.3s;
+    }
+
+    #mainNav
+    {
+        height: 0;
+    }
+
+    #mainNavButtons {
+        height: 0;
+        overflow: hidden;
+    }
+
+    #mainNavButtons ul {
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainNavButton {
+        border-bottom: 1px solid #222;
+        width: 100%;
+    }
+
+    #mediaNavButtonSlider {
+        background: #4478cc url("../images/portifolio/slider_button.png") no-repeat scroll center center;
+        border-radius: 0 0 3px 3px;
+        cursor: pointer;
+        display: block;
+        height: 45px;
+        position: absolute;
+        right: 5%;
+        top: 0;
+        width: 50px;
+    }
+
+
 }

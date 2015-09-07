@@ -27,14 +27,16 @@ NAVIGATION MENU
     border-top: 2px solid #4478cc;
     height: 50px;
     position: fixed;
+    transition: height 0.3s;
     width: 100%;
 }
 
 #mainNavButtons {
-     align-items: center;
-     display: flex;
-     height: 100%;
-     justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    transition: height 0.3s;
 }
 
 #mainNavButtons ul {
@@ -63,12 +65,8 @@ NAVIGATION MENU
 }
 
 /* NAV BUTTON SLIDER */
-
 #mediaNavButtonSlider {
-    background-color: #f00;
-    display: block;
-    height: 30px;
-    width: 30px;
+    display: none;
 }
 
 
