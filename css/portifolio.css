@@ -35,7 +35,10 @@ NAVIGATION MENU
      display: flex;
      height: 100%;
      justify-content: center;
-     margin: 0 auto;
+}
+
+#mainNavButtons ul {
+    margin: 0 auto;
 }
 
 .mainNavButton {
