@@ -1,6 +1,10 @@
 $(document).ready(function(){
-//function whitch open and close slide menu
+    //function which open and close slide menu
     $("#mediaNavButtonSlider").click(function() {
         $(this).parent("#mainNav").toggleClass("openMainNav");
     });
+
+
+
+
 });

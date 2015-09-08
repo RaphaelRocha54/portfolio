@@ -27,8 +27,10 @@ NAVIGATION MENU
     border-top: 2px solid #4478cc;
     height: 50px;
     position: fixed;
+    top: 0;
     transition: height 0.3s;
     width: 100%;
+    z-index: 1;
 }
 
 #mainNavButtons {
@@ -70,3 +72,74 @@ NAVIGATION MENU
 }
 
 
+/*****************************************************************************
+COVER
+******************************************************************************/
+@keyframes example {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+#cover {
+
+}
+
+#backgroundCover {
+    background: url(../images/portifolio/Landscape1.jpg) no-repeat top center fixed;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.overlay {
+    align-items: center;
+    background: rgba(85, 150, 255, 0.7) none repeat scroll 0 0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    animation: 2s linear 0s normal none infinite running floating example;
+    padding-top: 5%;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 6rem;
+}
+
+.overlay article {
+    width: 50%;
+}
+
+.overlay article header h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: normal;
+    padding-top: 10%;
+}
+
+.overlay article header h2 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.button {
+    padding-top: 10%;
+}
+
+.button button {
+    background: transparent none repeat scroll 0 0;
+    border: 2px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    height: 50px;
+    width: 170px;
+}
