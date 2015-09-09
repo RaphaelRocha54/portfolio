@@ -1,0 +1,54 @@
+/*ANIMATIONS*/
+
+/*Floating*/
+@-webkit-keyframes FloatW{
+    from {-webkit-transform:translate(-50%, 50%);}
+    40% {-webkit-transform:translate(-50%, 60%);}
+    60% {-webkit-transform:translate(-50%, 50%);}
+    80% {-webkit-transform:translate(-50%, 40%);}
+    to {-webkit-transform: translate(-50%, 50%);}
+}
+
+@-moz-keyframes FloatM {
+    from {-moz-transform:translate(-50%, 50%);}
+    40% {-moz-transform:translate(-50%, 60%);}
+    60% {-moz-transform:translate(-50%, 50%);}
+    80% {-moz-transform:translate(-50%, 40%);}
+    to {-moz-transform: translate(-50%, 50%);}
+}
+
+.button:hover .animationFloating {
+    -webkit-animation-name: FloatW;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: FloatM;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+
+
+/*Scaling*/
+@-webkit-keyframes scaleW {
+    from {-webkit-transform: scale(0.95);}
+    65% {-webkit-transform: scale(1.0);}
+    to {-webkit-transform: scale(0.95);}
+}
+
+@-moz-keyframes scaleM {
+    from {-moz-transform: scale(0.95);}
+    65% {-moz-transform: scale(1.0);}
+    to {-moz-transform: scale(0.95);}
+}
+
+.animationScaling {
+    -webkit-animation-name: scaleW;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scaleM;
+    -moz-animation-duration:2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
