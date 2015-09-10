@@ -1,8 +1,14 @@
 /* MAIN CSS - PORTIFOLIO */
 
+
+/*****************************************************************************
+GENERAL
+******************************************************************************/
 * {
     border: none;
-
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -16,6 +22,29 @@ html {
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
+}
+
+section article {
+    margin: 0 auto;
+    max-width: 1220px;
+}
+
+article header {
+    padding: 40px 0 30px;
+    text-align: center;
+}
+
+article header h2 {
+    color: #555;
+    font-size: 3.5rem;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+article header p {
+    color: #000;
+    font-size: 2rem;
+    font-weight: normal;
 }
 
 /*****************************************************************************
@@ -75,11 +104,10 @@ NAVIGATION MENU
 /*****************************************************************************
 COVER
 ******************************************************************************/
-@keyframes example {
-    0%   {background-color: red;}
-    25%  {background-color: yellow;}
-    50%  {background-color: blue;}
-    100% {background-color: green;}
+main {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 #cover {
@@ -88,7 +116,7 @@ COVER
 
 #backgroundCover {
     background: url(../images/portifolio/Landscape1.jpg) no-repeat top center fixed;
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
 }
@@ -185,5 +213,48 @@ COVER
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
     border-top: 16px solid #fff;
+}
 
+/*****************************************************************************
+EXPERTISE
+******************************************************************************/
+
+#expertise {
+    background: #f2f2f2;
+}
+
+.boxItems {
+    display: flex;
+    justify-content: space-around;
+}
+
+.item {
+    height: 400px;
+    padding: 15px;
+    text-align: center;
+    width: 30%;
+}
+
+.item:first-child h3 {
+    color: #e54d26;
+}
+
+.item:nth-child(2) h3 {
+    color: #016fba;
+}
+
+.item:nth-child(3) h3 {
+    color: #c94340;
+}
+
+.item h3 {
+    border-bottom: 1px solid #ccc;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.item p {
+    font-size: 1.5rem;
+    text-align: justify;
 }
