@@ -30,21 +30,22 @@ section article {
 }
 
 article header {
-    padding: 40px 0 30px;
+    padding: 75px 0 30px;
     text-align: center;
 }
 
 article header h2 {
-    color: #555;
+    color: #000;
     font-size: 3.5rem;
     font-weight: normal;
     text-transform: uppercase;
 }
 
 article header p {
-    color: #000;
+    color: #555;
     font-size: 2rem;
     font-weight: normal;
+    padding-top: 20px;
 }
 
 /*****************************************************************************
@@ -229,7 +230,6 @@ EXPERTISE
 }
 
 .item {
-    height: 400px;
     padding: 15px;
     text-align: center;
     width: 30%;
@@ -248,13 +248,20 @@ EXPERTISE
 }
 
 .item h3 {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
     font-size: 3rem;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
 .item p {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    padding: 20px 0 10px;
     text-align: justify;
+}
+
+.item p:last-child {
+    color: #888;
+    font-size: 1.4rem;
+    padding: 0;
 }
