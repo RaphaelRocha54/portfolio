@@ -48,6 +48,10 @@ article header p {
     padding-top: 20px;
 }
 
+#portifolio {
+    background: url(../images/portifolio/Landscape1.jpg) no-repeat top center fixed;
+}
+
 /*****************************************************************************
 NAVIGATION MENU
 ******************************************************************************/
@@ -115,13 +119,6 @@ main {
 
 }
 
-#backgroundCover {
-    background: url(../images/portifolio/Landscape1.jpg) no-repeat top center fixed;
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
 .overlay {
     align-items: center;
     background: rgba(85, 150, 255, 0.7) none repeat scroll 0 0;
@@ -150,6 +147,7 @@ main {
     color: #fff;
     font-size: 3rem;
     font-weight: normal;
+    padding-bottom: 10%;
     padding-top: 10%;
 }
 
@@ -161,7 +159,6 @@ main {
 
 .button {
     margin: 0 auto;
-    padding-top: 10%;
     position: relative;
     width: 170px;
 }
@@ -222,6 +219,7 @@ EXPERTISE
 
 #expertise {
     background: #f2f2f2;
+    padding-bottom: 50px;
 }
 
 .boxItems {
@@ -264,4 +262,14 @@ EXPERTISE
     color: #888;
     font-size: 1.4rem;
     padding: 0;
+}
+
+
+/*****************************************************************************
+PROJECTS
+******************************************************************************/
+
+#projects
+{
+    background: #fff;
 }
