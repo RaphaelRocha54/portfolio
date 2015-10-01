@@ -283,7 +283,7 @@ PROJECTS
 
 .projectItem {
     cursor: pointer;
-    position: relative;
+    padding-bottom: 30px;
     width: 30%;
 }
 
@@ -291,8 +291,8 @@ PROJECTS
 {
     align-items: center;
     display: flex;
-    height: 200px;
     overflow: hidden;
+    position: relative;
     width: 100%;
 }
 
@@ -326,6 +326,15 @@ PROJECTS
     transition: font-size 0.4s;
 }
 
+.projectItem h3 {
+    font-size: 2rem;
+    padding-top: 5px;
+}
+
+.projectItem p {
+    font-size: 1.5rem;
+}
+
 /*Item Project Hover*/
 .projectItem:hover img {
     filter: grayscale(100%);
@@ -337,7 +346,7 @@ PROJECTS
 }
 
 .projectItem:hover .overlayProjectItem p {
-    font-size: 3rem;
+    font-size: 3vw;
 }
 
 /*div used to fill the project item*/

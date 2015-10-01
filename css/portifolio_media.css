@@ -72,4 +72,44 @@
     .item {
         width: 100%;
     }
+
+    /*****************************************************************************
+    PROJECTS
+    ******************************************************************************/
+    #containerProjects {
+        justify-content: flex-start;
+    }
+
+    .projectItem {
+        box-sizing: border-box;
+        cursor: pointer;
+        padding-left: 3%;
+        padding-right: 3%;
+        width: 50%;
+    }
+
+    .projectItem:hover .overlayProjectItem p {
+        font-size: 2.5rem;
+    }
+
+    .projectItem h3 {
+        font-size: 3vw;
+    }
+
+}
+
+@media screen and (max-width: 441px){
+    #containerProjects {
+        justify-content: space-around;
+    }
+
+    .projectItem {
+        width: 90%;
+    }
+
+    .projectItem h3 {
+        font-size: 2.2rem;
+    }
+
+
 }
