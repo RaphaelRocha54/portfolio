@@ -24,6 +24,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     display: block;
 }
 
+section {
+    height: 101%;
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: all 1.5s;
+}
+
 section article {
     margin: 0 auto;
     max-width: 1220px;
@@ -116,7 +126,7 @@ main {
 }
 
 #cover {
-
+    opacity: 1;
 }
 
 .overlay {
