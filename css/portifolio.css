@@ -25,8 +25,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 section {
-    height: 101%;
-    opacity: 0;
+    /*height: 100%;*/
 }
 
 .visible {
@@ -60,6 +59,7 @@ article header p {
 
 #portifolio {
     background: url(../images/portifolio/Landscape1.jpg) no-repeat top center fixed;
+    background-size: cover;
 }
 
 /*****************************************************************************
@@ -132,6 +132,7 @@ main {
 .overlay {
     align-items: center;
     background: rgba(85, 150, 255, 0.7) none repeat scroll 0 0;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 59%, rgba(0, 0, 0, 0.1) 100%);
     display: flex;
     height: 100%;
     justify-content: center;
@@ -235,11 +236,14 @@ EXPERTISE
 .boxItems {
     display: flex;
     justify-content: space-around;
+    overflow: hidden;
 }
 
 .item {
     padding: 15px;
     text-align: center;
+    opacity: 0;
+    margin-top: 20px;
     width: 30%;
 }
 
@@ -274,6 +278,24 @@ EXPERTISE
     padding: 0;
 }
 
+/*Effects*/
+.visibleEffects .item:first-child{
+    margin: 0;
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.visibleEffects .item:nth-child(2){
+    margin: 0;
+    opacity: 1;
+    transition: all 0.6s ease-in 0.6s;
+}
+
+.visibleEffects .item:nth-child(3){
+    margin: 0;
+    opacity: 1;
+    transition: all 0.6s ease-out 1.2s;
+}
 
 /*****************************************************************************
 PROJECTS
@@ -293,6 +315,8 @@ PROJECTS
 
 .projectItem {
     cursor: pointer;
+    margin-top: -15px;
+    opacity: 0;
     padding-bottom: 30px;
     width: 30%;
 }
@@ -364,6 +388,25 @@ PROJECTS
     width: 30%;
 }
 
+/*Effects*/
+.projectItem.visibleEffects {
+    margin: 0;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.projectItem.visibleEffects:nth-child(3n+1) {
+
+}
+
+.projectItem.visibleEffects:nth-child(3n+2) {
+    transition: all 0.5s linear 0.5s;
+}
+
+.projectItem.visibleEffects:nth-child(3n+3) {
+    transition: all 0.5s linear 1s;
+}
+
 /*****************************************************************************
 ABOUT ME
 ******************************************************************************/
@@ -379,3 +422,12 @@ ABOUT ME
 #aboutMe header p {
     color: #666;
 }
+
+/*****************************************************************************
+ABOUT ME
+******************************************************************************/
+
+#contact {
+    background: #fff;
+}
+

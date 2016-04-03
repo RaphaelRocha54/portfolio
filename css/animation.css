@@ -53,3 +53,27 @@
     -moz-animation-timing-function:ease-in-out;
 }
 
+
+/*Background size*/
+@-webkit-keyframes bgsW {
+    0% {background-size: 100% 156.25%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
+}
+
+@-moz-keyframes bgsM {
+    0% {background-size: 100%;}
+    50% {background-size: 120%;}
+    100% {background-size: 100%;}
+}
+
+.animationBackground-size {
+    -webkit-animation-name: bgsW;
+    -webkit-animation-duration:30s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bgsM;
+    -moz-animation-duration:30s;
+    -moz-animation-iteration-count:1;
+    -moz-animation-timing-function:linear;
+}
