@@ -20,6 +20,9 @@ html {
     font-style: normal;
 }
 
+body {
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
     display: block;
 }
@@ -62,6 +65,25 @@ article header p {
     background-size: cover;
 }
 
+/*****************************************************************************
+SCROLL BAR SETTINGS
+******************************************************************************/
+/*::-webkit-scrollbar              { *//* 1 *//* }
+::-webkit-scrollbar-button       { *//* 2 *//* }
+::-webkit-scrollbar-track        { *//* 3 *//* }
+::-webkit-scrollbar-track-piece  { *//* 4 *//* }
+::-webkit-scrollbar-thumb        { *//* 5 *//* }
+::-webkit-scrollbar-corner       { *//* 6 *//* }
+::-webkit-resizer                { *//* 7 *//* }*/
+
+/*scrollbar-base-color: #C0C0C0;
+scrollbar-base-color: #C0C0C0;
+scrollbar-3dlight-color: #C0C0C0;
+scrollbar-highlight-color: #C0C0C0;
+scrollbar-track-color: #EBEBEB;
+scrollbar-arrow-color: black;
+scrollbar-shadow-color: #C0C0C0;
+scrollbar-dark-shadow-color: #C0C0C0;*/
 /*****************************************************************************
 NAVIGATION MENU
 ******************************************************************************/
@@ -120,8 +142,6 @@ NAVIGATION MENU
 COVER
 ******************************************************************************/
 main {
-    position: absolute;
-    height: 100%;
     width: 100%;
 }
 

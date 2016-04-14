@@ -1,4 +1,4 @@
-function oneScroll(w){
+/*function oneScroll(w){
     if( $(window).width() >= 768 ) {
         //Function witch scrolls page to the next section
         //Firefox
@@ -32,9 +32,17 @@ function oneScroll(w){
             return false;
         });
     }
-}
+}*/
 
-$(document).ready(function(){
+$(function() {
+    /*set viewport height in overlay*/
+    var viewPortHeight = $(window).height();
+    $(".overlay").css("height", viewPortHeight);
+    $(window).on("resize", function(){
+        var viewPortHeight = $(window).height();
+        $(".overlay").css("height", viewPortHeight);
+    });
+
     //function which open and close slide menu
     $("#mediaNavButtonSlider").click(function() {
         $(this).parent("#mainNav").toggleClass("openMainNav");
@@ -57,8 +65,6 @@ $(document).ready(function(){
             }
         });
     });*/
-
-
 
     /*ANIMATE ON SCROLL*/
     //Function which aplly a class (only one time) when element is visible on the viewport. ( this function does not removes class when element is no more visible )
@@ -87,11 +93,53 @@ $(document).ready(function(){
         });
     });
 
+    //Roll page to the first content section
+    $(".button").click(function(){
+        var viewPortHeight = $(window).height();
 
+        $('html,body').animate({
+            scrollTop: viewPortHeight
+        }, 1000, function(){
+        });
 
+        setTimeout(function(){
+            $('body').css("overflow-y","visible");
+        }, 500);
 
+    });
 
-    $(window).scrollTop(0);
+    /*Scroll to the top on load*/
+    setTimeout(function(){
+        $('html,body').scrollTop(0);
+    }, 10);
+
     /*oneScroll();*/
+
+
+    //Determine scroll
+    var previousScroll = 0;
+
+   /* $(window).scroll(function(){
+        var currentScroll = $(this).scrollTop();
+        if (currentScroll > previousScroll){
+            *//*$("#portifolio").css("background-position-y","+=10px");*//*
+            $(".item img").css("margin-top","+=10px"+currentScroll/50);
+            console.log("desceu" + currentScroll);
+        } else {
+            *//*$("#portifolio").css("background-position-y","-=10px");*//*
+            $(".item img").css("margin-top","-=10px"+currentScroll/50);
+            console.log("subiu" + currentScroll);
+        }
+        previousScroll = currentScroll;
+    });*/
+
+    $(window).scroll(function(e){
+        parallax();
+    });
+    function parallax(){
+        var scrolled = $(window).scrollTop();
+        $('#portifolio').css('background-position','center '+ -(scrolled*0.3)+'px');
+        $('#portifolio').height(); // acho que não tem necessidade
+    }
 });
 
