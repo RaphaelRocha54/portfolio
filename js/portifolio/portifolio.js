@@ -131,7 +131,7 @@ $(window).load(function() {
     //Function witch sets a time to remove preloader of the screen
     setTimeout(function(){
         $( ".preLoader" ).fadeOut( "slow", function() {
-
+            /*$('body').fadeIn(3000);*/
         });
     }, 1500);
 });
