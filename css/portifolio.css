@@ -67,11 +67,9 @@ PRE LOADER
 .loadingText
 {
     bottom: 25px;
-    left: 50%;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
     text-align: center;
-    transform: translate(-50%, -50%);
-    width: 100%;
 }
 
 .loadingText p
