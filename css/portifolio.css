@@ -13,11 +13,11 @@ PRE LOADER
 
 .mainCircle
 {
-    height: 150px;
+    height: 100px;
     margin: 0 auto;
     position: relative;
     top: 35%;
-    width: 150px;
+    width: 100px;
 }
 
 .circle
