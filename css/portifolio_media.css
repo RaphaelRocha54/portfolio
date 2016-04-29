@@ -20,6 +20,7 @@
     }
 
     #mainNav.openMainNav #mainNavButtons {
+        background: #272727;
         align-items: flex-start;
         height: 100%;
         padding-top: 50px;
@@ -47,7 +48,7 @@
     }
 
     #mediaNavButtonSlider {
-        background: #4478cc url("../images/portifolio/slider_button.png") no-repeat scroll center center;
+        background: #777777 url("../images/portifolio/slider_button.png") no-repeat scroll center center;
         border-radius: 0 0 3px 3px;
         cursor: pointer;
         display: block;
@@ -101,6 +102,10 @@
 
     .projectItem h3 {
         font-size: 3vw;
+    }
+
+    #containerProjects div.projectItem.visibleEffects {
+        transition-delay: 0s;
     }
 
 }
