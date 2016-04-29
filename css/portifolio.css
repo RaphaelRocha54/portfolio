@@ -24,43 +24,51 @@ PRE LOADER
 {
     border: 3px solid #000;
     border-radius: 50%;
-    height: 41%;
+    height: 50%;
     position: absolute;
     transition: all 0.3s ease 0s;
-    width: 41%;
+    width: 50%;
 }
 
 .circleOne
 {
-
+    left: 0;
+    top: 0;
+    /*alguns navegadores não suportam. Por isso, precisei retirar
     left: 50%;
     top: 0;
-    transform: translate(-50%);
-
+    transform: translate(-50%);*/
 }
 
 .circleTwo
 {
-
+    right: 0;
+    top: 0;
+   /* alguns navegadores não suportam. Por isso, precisei retirar
     right: 0;
     top: 50%;
-    transform: translate(0px, -50%);
+    transform: translate(0px, -50%);*/
 }
 
 .circleThree
 {
-
-    left: 50%;
     bottom: 0;
-    transform: translate(-50%);
+    right: 0;
+    /*alguns navegadores não suportam. Por isso, precisei retirar
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);*/
 
 }
 
 .circleFour
 {
+    bottom: 0;
+    left: 0;
+   /* alguns navegadores não suportam. Por isso, precisei retirar
     left: 0;
     top: 50%;
-    transform: translate(0px, -50%);
+    transform: translate(0px, -50%);*/
 
 }
 
