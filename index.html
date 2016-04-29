@@ -1,248 +1,254 @@
 <!DOCTYPE html>
-<head>
-    <!-- CSS LINKS -->
-    <link rel="stylesheet" href="css/portifolio.css" />
-    <link rel="stylesheet" href="css/portifolio_media.css" />
-    <link rel="stylesheet" href="css/animation.css" />
+    <head>
+        <!-- CSS LINKS -->
+        <link rel="stylesheet" href="css/portifolio.css" />
+        <link rel="stylesheet" href="css/portifolio_media.css" />
+        <link rel="stylesheet" href="css/animation.css" />
 
-    <!-- Mobile viewport control -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Mobile viewport control -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <!-- Jquery library -->
-    <script src="js/libraries/jquery-2.1.4.min.js"></script>
+        <!-- Jquery library -->
+        <script src="js/libraries/jquery-2.1.4.min.js"></script>
 
-    <!-- Portifolio Jquery -->
-    <script src="js/portifolio/portifolio.js"></script>
-</head>
-<body id="portifolio">
-    <!-- BEGIN PORTIFOLIO -->
-    <!-- BEGIN NAVIGATION MENU -->
-    <nav id="mainNav">
-        <div id="mediaNavButtonSlider">
+        <!-- Portifolio Jquery -->
+        <script src="js/portifolio/portifolio.js"></script>
+    </head>
+    <body id="portifolio">
+        <section class="preLoader">
+            <div class="mainCircle animationRotate">
+                <div class="circle circleOne growthOdd"></div>
+                <div class="circle circleTwo growthEven"></div>
+                <div class="circle circleThree growthOdd"></div>
+                <div class="circle circleFour growthEven"></div>
+            </div>
+            <div class="loadingText blink">
+                <p>LOADING...</p>
+            </div>
+        </section>
+        <!-- BEGIN PORTIFOLIO -->
+        <!-- BEGIN NAVIGATION MENU -->
+        <nav id="mainNav">
+            <div id="mediaNavButtonSlider">
 
-        </div>
-        <div id="mainNavButtons">
-            <ul>
-                <li class="mainNavButton">
-                    <a href="" ><p>Expertise</p></a>
-                </li>
-                <li class="mainNavButton">
-                    <a href="" ><p>About Me</p></a>
-                </li>
-                <li class="mainNavButton">
-                    <a href="" ><p>Projects</p></a>
-                </li>
-                <li class="mainNavButton">
-                    <a href="" ><p>Expertise</p></a>
-                </li>
-                <li class="mainNavButton">
-                    <a href="" ><p>Contact</p></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- END NAVIGATION MENU -->
-    <main>
-        <!-- BEGIN COVER -->
-        <section id="cover" class="heightParameter">
-                <div class="overlay">
-                    <article>
-                        <header>
-                            <div class="logo">
-                                <p>RR</p>
-                            </div>
-                            <h1>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
-                            <div class="button">
-                                <button id="goExpertise" type="button">View More</button>
-                                <div class="arrow animationFloating">
-                                    <div class="square"></div>
-                                    <div class="triangle"></div>
+            </div>
+            <div id="mainNavButtons">
+                <ul>
+                    <li class="mainNavButton">
+                        <a href="" ><p>Expertise</p></a>
+                    </li>
+                    <li class="mainNavButton">
+                        <a href="" ><p>About Me</p></a>
+                    </li>
+                    <li class="mainNavButton">
+                        <a href="" ><p>Projects</p></a>
+                    </li>
+                    <li class="mainNavButton">
+                        <a href="" ><p>Expertise</p></a>
+                    </li>
+                    <li class="mainNavButton">
+                        <a href="" ><p>Contact</p></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- END NAVIGATION MENU -->
+        <main>
+            <!-- BEGIN COVER -->
+            <section id="cover" class="heightParameter">
+                    <div class="overlay">
+                        <article>
+                            <header>
+                                <div class="logo">
+                                    <p>RR</p>
                                 </div>
+                                <h1>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+                                <div class="button">
+                                    <button id="goExpertise" type="button">View More</button>
+                                    <div class="arrow animationFloating">
+                                        <div class="square"></div>
+                                        <div class="triangle"></div>
+                                    </div>
+                                </div>
+                            </header>
+                        </article>
+                    </div>
+            </section>
+            <!-- END COVER -->
+
+            <!-- BEGIN EXPERTISE -->
+            <section id="expertise">
+                <article>
+                    <header>
+                        <h2>Skills &amp; competence</h2>
+                        <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
+                    </header>
+                    <div class="boxItems">
+                        <div class="item">
+                            <h3>HTML 5</h3>
+                            <img src="images/portifolio/html5_logo.png" />
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                        </div>
+                        <div class="item">
+                            <h3>CSS 3</h3>
+                            <img src="images/portifolio/css3_logo.png" />
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                        </div>
+                        <div class="item">
+                            <h3>JQUERY</h3>
+                            <img src="images/portifolio/jquery_logo.png" />
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                            <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- END EXPERTISE -->
+
+            <!-- BEGIN PROJECTS -->
+            <section id="projects">
+                <article>
+                    <header>
+                        <h2>Projects</h2>
+                        <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
+                    </header>
+                    <div id="containerProjects">
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
                             </div>
-                        </header>
-                    </article>
-                </div>
-        </section>
-        <!-- END COVER -->
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
+                        <div class="projectItem">
+                            <div class="imgProjectItem">
+                                <img src="images/portifolio/atletico.png" />
+                                <a href="" class="overlayProjectItem">
+                                    <p>Open Website</p>
+                                </a>
+                            </div>
+                            <h3>Clube Atl&eacute;tico Mineiro</h3>
+                            <p> The worlds best soccer team </p>
+                        </div>
 
-        <!-- BEGIN EXPERTISE -->
-        <section id="expertise">
-            <article>
-                <header>
-                    <h2>Skills &amp; competence</h2>
-                    <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
-                </header>
-                <div class="boxItems">
-                    <div class="item">
-                        <h3>HTML 5</h3>
-                        <img src="images/portifolio/html5_logo.png" />
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
+                        <div class="projectItemFill"></div>
+                        <div class="projectItemFill"></div>
+                        <div class="projectItemFill"></div>
                     </div>
-                    <div class="item">
-                        <h3>CSS 3</h3>
-                        <img src="images/portifolio/css3_logo.png" />
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
-                    </div>
-                    <div class="item">
-                        <h3>JQUERY</h3>
-                        <img src="images/portifolio/jquery_logo.png" />
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
-                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ina aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco lab</p>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <!-- END EXPERTISE -->
+                </article>
+            </section>
+            <!-- END PROJECTS -->
 
-        <!-- BEGIN PROJECTS -->
-        <section id="projects">
-            <article>
-                <header>
-                    <h2>Projects</h2>
-                    <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
-                </header>
-                <div id="containerProjects">
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
-                    <div class="projectItem">
-                        <div class="imgProjectItem">
-                            <img src="images/portifolio/atletico.png" />
-                            <a href="" class="overlayProjectItem">
-                                <p>Open Website</p>
-                            </a>
-                        </div>
-                        <h3>Clube Atl&eacute;tico Mineiro</h3>
-                        <p> The worlds best soccer team </p>
-                    </div>
+            <!-- BEGIN ABOUT ME -->
+            <section id="aboutMe">
+                <article>
+                    <header>
+                        <h2 class="myclass">About Me</h2>
+                        <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
+                    </header>
 
-                    <div class="projectItemFill"></div>
-                    <div class="projectItemFill"></div>
-                    <div class="projectItemFill"></div>
-                </div>
-            </article>
-        </section>
-        <!-- END PROJECTS -->
+                </article>
+            </section>
+            <!-- END ABOUT ME -->
 
-        <!-- BEGIN ABOUT ME -->
-        <section id="aboutMe">
-            <article>
-                <header>
-                    <h2 class="myclass">About Me</h2>
-                    <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
-                </header>
+            <!-- BEGIN CONTACT -->
+            <section id="contact">
+                <article>
+                    <header>
+                        <h2 class="myclass">Contact me</h2>
+                        <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
+                    </header>
 
-            </article>
-        </section>
-        <!-- END ABOUT ME -->
+                </article>
+            </section>
+            <!-- END CONTACT -->
+        </main>
+        <!-- END PORTIFOLIO -->
 
-        <!-- BEGIN CONTACT -->
-        <section id="contact">
-            <article>
-                <header>
-                    <h2 class="myclass">Contact me</h2>
-                    <p>um dolor sit amet, consectetur adipi cididunt ut labore et dolore magn </p>
-                </header>
-
-            </article>
-        </section>
-        <!-- END CONTACT -->
-    </main>
-    <!-- END PORTIFOLIO -->
-
-
-<script>
-    $(function () {
-    });
-</script>
-</body>
+    </body>
 </html>

@@ -77,3 +77,96 @@
     -moz-animation-iteration-count:1;
     -moz-animation-timing-function:linear;
 }
+
+/*Pre Loader*/
+@-webkit-keyframes rotateW {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@-moz-keyframes rotateM {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.animationRotate{
+    -webkit-animation-name: rotateW;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: rotateM;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+/*Height/Width*/
+@-webkit-keyframes growthW {
+    0% {height: 0%; width: 0%;}
+    50% {height: 50%; width: 50%;}
+    100% {height: 0%; width: 0%;}
+}
+
+@-moz-keyframes growthM {
+    0% {height: 0%; width: 0%;}
+    50% {height: 50%; width: 50%;}
+    100% {height: 0%; width: 0%;}
+}
+
+@-webkit-keyframes growthEvenW {
+    0% {height: 50%; width: 50%;}
+    50% {height: 0%; width: 0%;}
+    100% {height: 50%; width: 50%;}
+}
+
+@-moz-keyframes growthEvenM {
+    0% {height: 50%; width: 50%;}
+    50% {height: 0%; width: 0%;}
+    100% {height: 50%; width: 50%;}
+}
+
+.growthOdd{
+    -webkit-animation-name: growthW;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: growthM;
+    -moz-animation-duration:2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+.growthEven{
+    -webkit-animation-name: growthEvenW;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: growthEvenM;
+    -moz-animation-duration:2s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+/*Blink Text*/
+@-webkit-keyframes blinkW {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@-moz-keyframes blinkM {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.blink{
+    -webkit-animation-name: blinkW;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: blinkM;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}

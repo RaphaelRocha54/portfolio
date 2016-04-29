@@ -115,24 +115,6 @@ $(function() {
 
     /*oneScroll();*/
 
-
-    //Determine scroll
-    var previousScroll = 0;
-
-   /* $(window).scroll(function(){
-        var currentScroll = $(this).scrollTop();
-        if (currentScroll > previousScroll){
-            *//*$("#portifolio").css("background-position-y","+=10px");*//*
-            $(".item img").css("margin-top","+=10px"+currentScroll/50);
-            console.log("desceu" + currentScroll);
-        } else {
-            *//*$("#portifolio").css("background-position-y","-=10px");*//*
-            $(".item img").css("margin-top","-=10px"+currentScroll/50);
-            console.log("subiu" + currentScroll);
-        }
-        previousScroll = currentScroll;
-    });*/
-
     $(window).scroll(function(e){
         parallax();
     });
@@ -141,5 +123,11 @@ $(function() {
         $('#portifolio').css('background-position','center '+ -(scrolled*0.3)+'px');
         $('#portifolio').height(); // acho que não tem necessidade
     }
+
+    setTimeout(function(){
+        $( ".preLoader" ).fadeOut( "slow", function() {
+
+        });
+    }, 1500);
 });
 
