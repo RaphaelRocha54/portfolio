@@ -124,10 +124,11 @@ $(function() {
         $('#portifolio').height(); // acho que não tem necessidade
     }
 
-    setTimeout(function(){
+    //Function witch sets a time to remove preloader of the screen
+    /*setTimeout(function(){
         $( ".preLoader" ).fadeOut( "slow", function() {
 
         });
-    }, 1500);
+    }, 1500);*/
 });
 
