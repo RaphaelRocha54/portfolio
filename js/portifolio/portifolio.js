@@ -66,6 +66,11 @@ $(function() {
         });
     });*/
 
+    //Scroll Top Button
+    $('.backToTop').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+    });
+
     /*ANIMATE ON SCROLL*/
     //Function which aplly a class (only one time) when element is visible on the viewport. ( this function does not removes class when element is no more visible )
     $(window).scroll(function() {
@@ -79,6 +84,17 @@ $(function() {
         });
     });
 
+    //Function which shows some buttons when a half part of the cover is no more visible
+    $(window).scroll(function() {
+        var coverHeight = $('#cover').height() /2;
+        var scrollTopoDistance = $(window).scrollTop();
+        if ( scrollTopoDistance > coverHeight ) {
+            $('.linkedinButton, .backToTop ').addClass('showButton');
+        }
+        else {
+            $('.linkedinButton, .backToTop ').removeClass('showButton');
+        }
+    });
 
     /*ANIMATE ON SCROLL*/
     //Function which aplly a class (only one time) when element is visible on the viewport. ( this function does not removes class when element is no more visible )

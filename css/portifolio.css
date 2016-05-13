@@ -533,11 +533,136 @@ ABOUT ME
     color: #666;
 }
 
-/*****************************************************************************
-ABOUT ME
-******************************************************************************/
+.aboutMe {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0 30px 30px;
+}
 
+.aboutMeImage {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    height: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    width: 300px;
+}
+
+.aboutMeImage img {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    box-sizing: border-box;
+    max-height: 300px;
+    max-width: 300px;
+    overflow: hidden;
+}
+
+.aboutMeContent {
+    padding: 30px;
+}
+
+.aboutMeContent h3 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.aboutMeContent p {
+    color: #999;
+    font-size: 2rem;
+    line-height: 30px;
+}
+
+/*****************************************************************************
+CONTACT
+******************************************************************************/
 #contact {
     background: #fff;
 }
 
+.contactBox {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.contactBox h3 {
+    font-size: 2.5rem;
+}
+
+
+
+/*****************************************************************************
+FOOTER
+******************************************************************************/
+#footer {
+    background: rgba(0, 0, 0, 0.95) none repeat scroll 0 0;
+    height: 75px;
+    position: relative;
+    width: 100%;
+}
+
+#footer h4{
+    color: #cacaca;
+    font-size: 1.8rem;
+    line-height: 75px;
+    text-align: center;
+}
+
+
+
+/*****************************************************************************
+BUTTONS
+******************************************************************************/
+/*LINKEDIN*/
+.linkedinButton {
+    bottom: 270px;
+    display: block;
+    height: 40px;
+    left: -45px;
+    position: fixed;
+    transition: left 0.4s;
+    width: 40px;
+}
+
+.linkedinButton img {
+    height: auto;
+    max-height: 40px;
+    max-width: 40px;
+    width: auto;
+}
+
+a.showButton {
+    left: 0;
+}
+
+/*BACK TO TOP*/
+.backToTop {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    border-radius: 50%;
+    bottom: 260px;
+    cursor: pointer;
+    height: 60px;
+    position: fixed;
+    right: -100px;
+    text-align: center;
+    transition: right 0.4s, background 0.3s;
+    width: 60px;
+}
+
+.backToTop:hover {
+    background: rgba(100, 100, 100, 0.6) none repeat scroll 0 0;
+}
+
+.backToTop img {
+    height: auto;
+    margin-top: 19px;
+    max-height: 30px;
+    max-width: 30px;
+    width: auto;
+}
+
+div.showButton {
+    right: 30px;
+}
